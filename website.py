@@ -84,14 +84,14 @@ page_icon = "📚"
 st.set_page_config(page_title = page_title,page_icon=page_icon,layout = "centered")
 
 #hide streamlit style
-  hide_st_style = """
+hide_st_style = """
                  <style>
                  #MainMenu{visibility:hidden;}
                  footer{visibility:hidden;}
                  header{visibility:hidden;}
                  </style>
                  """
-  st.markdown(hide_st_style,unsafe_allow_html=True)
+st.markdown(hide_st_style,unsafe_allow_html=True)
 
 selected = option_menu(
             menu_title = "Main Menu",
