@@ -83,7 +83,7 @@ page_icon = "📚"
 #website configuration
 st.set_page_config(page_title = page_title,page_icon=page_icon,layout = "centered")
 
-hide streamlit style
+#hide streamlit style
   hide_st_style = """
                  <style>
                  #MainMenu{visibility:hidden;}
