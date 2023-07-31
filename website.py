@@ -171,5 +171,5 @@ if selected =="History":
             st.write(word['Meanings'])
             st.write('Example Sentences')
             st.write(word['sentences'])
-            delete = st.button("Delete")
-            if delete: db.delete_word(w,key=f'Delete_{w}')
+            delete = st.button("Delete",key=f'Delete_{w}')
+            if delete: db.delete_word(w)
