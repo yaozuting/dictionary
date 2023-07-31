@@ -4,7 +4,7 @@ gingerit==0.9.0
 nltk==3.8.1
 PyDictionary==2.0.1
 PyDictionary==2.0.1
-python-dotenv==1.0.0
+python-dotenv==0.21.1
 Requests==2.31.0
 streamlit==1.25.0
 streamlit_option_menu==0.3.6
