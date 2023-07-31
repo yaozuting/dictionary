@@ -9,3 +9,5 @@ Requests==2.31.0
 streamlit==0.89.0
 streamlit_option_menu==0.3.6
 translate==3.6.1
+protobuf==3.20
+
