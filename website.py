@@ -70,11 +70,6 @@ def sentence_corrector(sentence,count):
     except KeyError: return f"Try to make it under 120 words currently at {count}!!"
     return f"{corrected_sentence}    ({count}words)"
 
-# word = input()
-# audio = get_meanings(word)
-# print(audio)
-
-
 #creating a website
 page_title = "Dictionary "
 page_icon = "📚"
@@ -112,7 +107,7 @@ if selected == "Dictionary":
 #----header section--
  st.header('Dictionary')
 
- with st.form(key="dictionary_form",clear_on_submit=True):
+ with st.form(key="dictionary_form"):
     search_word = st.text_input("Input a word")
     submitted = st.form_submit_button('Send')
 
@@ -177,4 +172,4 @@ if selected =="History":
             st.write('Example Sentences')
             st.write(word['sentences'])
             delete = st.button("Delete")
-            if delete: db.delete_word(w)
+            if delete: db.delete_word(w,key=f'Delete_{w}')
